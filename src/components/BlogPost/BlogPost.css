@@ -1,0 +1,65 @@
+
+#img1{
+
+    width: 1500px;
+    height: auto;
+    margin-bottom: 40px;
+}
+#blogPostContainer{
+    padding: 30px 200px 50px 200px;
+}
+#blogPostContainer h1{
+    font-size: 70px;
+}
+#text{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 40px;
+}
+#text h3{
+    font-size: 23px;
+    margin-left: 100px;
+    font-weight: normal;
+}
+#textSpace{
+    margin-top: 40px;
+    padding: 40px;
+    font-size: 22px;
+    background-color: #b3b3b3;
+    color: #717171;
+    font-weight: normal;
+}
+#link{
+    color: #717171;
+}
+#newContainer{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px grey solid;
+    width: 90%;
+}
+#newContainer h1{
+    margin-top: 150px;
+}
+#newContainer img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.card{
+    background-color: #f4f0f8;
+    text-align: center;
+    width: 100%;
+    padding: 20px 60px 10px 60px;
+    border-radius: 10px;
+}
+#section3{
+    display: flex;
+    gap: 50px
+}
+.card h3{
+    font-weight: normal;
+}
+.card h2{
+    margin: 20px 0 20px 0;
+}

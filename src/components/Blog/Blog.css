@@ -1,0 +1,110 @@
+
+.mainContainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#textContainer {
+    background-color: #31323c;
+    padding: 110px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+
+#textContainer h2 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#img1{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    top: 23%;
+    right: 31%;
+}
+#img2{
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 23%;
+}
+#img3{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    right: 12%;
+}
+#img4{
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: 5%;
+}
+#posts{
+    padding: 100px;
+}
+#posts h1{
+    color: #232536;
+font-size: 70px;
+}
+.imgCar{
+    width: 650px;
+    height: 400px;
+}
+
+#postInfo{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#postContainer{
+    border-bottom: 1px solid grey;
+    padding-bottom: 300px;
+}
+#postInfo button{
+    background-color: #ff5959;
+    color: white;
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+}
+#postInfo h5{
+    font-size: 20px;
+    font-weight: normal;
+}
+#postInfo h6{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #202020;
+}
+#postInfo h2{
+    color: #232536;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#postInfo h3{
+    margin: 40px 0 40px 0;
+    font-size: 22px;
+    color: #232536;
+    font-weight: normal;
+}
+.infoZone{
+    margin-left: 50px;
+}
