@@ -1,13 +1,11 @@
 import React from 'react';
+import { CiLinkedin } from 'react-icons/ci';
+import { FaFacebook, FaInstagram, FaPaperPlane } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
+import logo from '../Pictures/logo/logo.jpg';
 import styles from './Footer.css';
-import logo from "../Pictures/logo/logo.jpg";
-import {Link} from "react-router-dom";
-import { FaPaperPlane } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => (
     <footer className={styles.container}>
@@ -16,7 +14,7 @@ const Footer = () => (
                 <div id={styles.carLogo}>
                     <img src={logo} alt="" id={styles.logo} />
                     <Link to="/" className={styles.link}>
-                    <h1>CarNews</h1>
+                        <h1>CarNews</h1>
                     </Link>
                 </div>
                 <div id={styles.nav}>
@@ -28,7 +26,7 @@ const Footer = () => (
                             <li>Блог</li>
                         </Link>
                         <Link to="/" className={styles.link}>
-                        <li>Про нас</li>
+                            <li>Про нас</li>
                         </Link>
                     </ul>
                 </div>
@@ -39,24 +37,35 @@ const Footer = () => (
                 Підпишіться на наші новини,
                 <br />
                 що б отримуват останні <br />
-            оновлення та новини</h1>
-            <input type="text" placeholder="example@email.com"/>
-            <button>Підписатись   <FaPaperPlane /></button>
+                оновлення та новини
+            </h1>
+            <input type="text" placeholder="example@email.com" />
+            <button>
+                Підписатись <FaPaperPlane />
+            </button>
         </div>
         <div id={styles.socialLinks}>
             <ul>
                 <Link to="/https://uk-ua.facebook.com/">
-                <li><FaFacebook /></li>
+                    <li>
+                        <FaFacebook />
+                    </li>
                 </Link>
                 <Link to="/https://x.com/?lang=ua">
-                <li><FaTwitter /></li>
-                    </Link>
+                    <li>
+                        <FaTwitter />
+                    </li>
+                </Link>
                 <Link to="/https://www.instagram.com/">
-                <li><FaInstagram /></li>
+                    <li>
+                        <FaInstagram />
+                    </li>
                 </Link>
                 <Link to="/https://uk-ua.facebook.com/">
-                <li><CiLinkedin /></li>
-                    </Link>
+                    <li>
+                        <CiLinkedin />
+                    </li>
+                </Link>
             </ul>
         </div>
     </footer>

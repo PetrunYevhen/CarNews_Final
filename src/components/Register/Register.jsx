@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
 import { auth } from '../../firebase';
 import styles from './Register.css';
 
@@ -10,19 +11,19 @@ const Register = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const handleRegister = (e) => {
-        e.preventDefault();
+    const handleRegister = (event) => {
+        event.preventDefault();
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                console.log("User registered:", userCredential);
-                setEmail("");
-                setPassword("");
-                setError("");
+                console.log('User registered:', userCredential);
+                setEmail('');
+                setPassword('');
+                setError('');
                 navigate('/');
             })
             .catch((error) => {
-                console.error("Registration error:", error);
-                setError("Не вдалося зареєструватися. Спробуйте ще раз.");
+                console.error('Registration error:', error);
+                setError('Не вдалося зареєструватися. Спробуйте ще раз.');
             });
     };
 
@@ -31,11 +32,13 @@ const Register = () => {
             <form onSubmit={handleRegister}>
                 <div>
                     <div>
-                        <label htmlFor="email" id={styles.l1}>Email:</label>
+                        <label htmlFor="email" id={styles.l1}>
+                            Email:
+                        </label>
                         <input
                             id="email"
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(event) => setEmail(event.target.value)}
                             type="email"
                             required
                         />
@@ -45,14 +48,16 @@ const Register = () => {
                         <input
                             id="password"
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            onChange={(event) => setPassword(event.target.value)}
                             type="password"
                             required
                         />
                     </div>
                 </div>
                 <h3>Забули пароль?</h3>
-                <button type="submit" id={styles.login}>Зареєструватися</button>
+                <button type="submit" id={styles.login}>
+                    Зареєструватися
+                </button>
                 {error && <p id={styles.error}>{error}</p>}
                 <Link to="/login" id={styles.links}>
                     <button id={styles.create}>Увійти в профіль</button>

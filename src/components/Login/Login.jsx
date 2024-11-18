@@ -1,6 +1,7 @@
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+
 import { auth } from '../../firebase';
 import styles from './Login.css';
 
@@ -10,8 +11,8 @@ const Login = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    function logIn(e) {
-        e.preventDefault();
+    function logIn(event) {
+        event.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then((user) => {
                 console.log(user);
@@ -34,13 +35,18 @@ const Login = () => {
                         <label htmlFor="email" id={styles.l1}>
                             Email:
                         </label>
-                        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" />
+                        <input
+                            value={email}
+                            onChange={(event) => setEmail(event.target.value)}
+                            type="email"
+                            id="email"
+                        />
                     </div>
                     <div>
                         <label htmlFor="password">Пароль:</label>
                         <input
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            onChange={(event) => setPassword(event.target.value)}
                             type="password"
                             id="password"
                         />

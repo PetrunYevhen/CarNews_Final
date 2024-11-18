@@ -1,18 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import {Link} from "react-router-dom";
-import img6 from '../Pictures/MainPage//1.jpg'
-import img4 from '../Pictures/MainPage/2.png'
-import img3 from '../Pictures/MainPage/3.jpg'
-import img5 from '../Pictures/MainPage/4.png'
-import img1 from '../Pictures/MainPage/5.png'
-import img2 from '../Pictures/MainPage/945x471.png'
-import img7 from '../Pictures/MainPage/7906.jpg'
-import img10 from '../Pictures/MainPage/image.png'
-import img8 from '../Pictures/MainPage/8.jpg'
-import img9 from '../Pictures/MainPage/thumbnail_600x251.png'
-import ruslan from '../Pictures/MainPage/Ruslan.jpg'
-
+import img6 from '../Pictures/MainPage/1.jpg';
+import img4 from '../Pictures/MainPage/2.png';
+import img3 from '../Pictures/MainPage/3.jpg';
+import img5 from '../Pictures/MainPage/4.png';
+import img1 from '../Pictures/MainPage/5.png';
+import img8 from '../Pictures/MainPage/8.jpg';
+import img2 from '../Pictures/MainPage/945x471.png';
+import img7 from '../Pictures/MainPage/7906.jpg';
+import img10 from '../Pictures/MainPage/image.png';
+import ruslan from '../Pictures/MainPage/ruslan.jpg';
+import img9 from '../Pictures/MainPage/thumbnail_600x251.png';
 import styles from './Main.css';
 
 // function Header() {};
