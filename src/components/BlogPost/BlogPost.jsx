@@ -9,24 +9,24 @@ import img5 from '../Pictures/MainPage/4.png';
 import styles from './BlogPost.css';
 
 const BlogPost = () => (
-    <div id={styles.blogPostContainer}>
+    <div id={styles.blogPostContainer} data-testid="blog-post-container">
         <div>
-            <img src={img1} alt="" id={styles.img1} />
-            <h1>
+            <img src={img1} alt="" id={styles.img1} data-testid="post-image" />
+            <h1 data-testid="post-title">
                 Презентовано новий сімейний кросовер
                 <br />
                 Volkswagen Tayron
             </h1>
         </div>
-        <div id={styles.text}>
-            <h2>InfoCar</h2>
-            <h3>Жовтень 11, 2024 • 3 min Read</h3>
+        <div id={styles.text} data-testid="post-meta">
+            <h2 data-testid="post-author">InfoCar</h2>
+            <h3 data-testid="post-date">Жовтень 11, 2024 • 3 min Read</h3>
         </div>
-        <div id={styles.textSpace}>
+        <div id={styles.textSpace} data-testid="post-content">
             <p>
                 У Німеччині презентували новий Volkswagen Tayron другого покоління. Сімейний кросовер покажуть публіці
                 на автошоу в Парижі і він буде продаватися у Європі за ціною від 45 475 євро. Про нього розповіли{' '}
-                <Link to="/" id={styles.link}>
+                <Link to="/" id={styles.link} data-testid="link">
                     на офіційному сайті Volkswagen.
                 </Link>
                 Кросовер Volkswagen Tayron другої генерації став «глобальною» моделлю (попередника продавали лише в
@@ -55,10 +55,10 @@ const BlogPost = () => (
                 Усі версії отримали 7-ступінчастий робот DSG, а привід може бути переднім або повним.
             </p>
         </div>
-        <div id={styles.newContainer}>
-            <h1>Всі категорії</h1>
-            <div id={styles.section3}>
-                <div className={styles.card}>
+        <div id={styles.newContainer} data-testid="category-container">
+            <h1 data-testid="categories-title">Всі категорії</h1>
+            <div id={styles.section3} data-testid="category-section">
+                <div className={styles.card} data-testid="category-card">
                     <img src={img3} alt="" />
                     <h2>Огляди авто</h2>
                     <h3>
@@ -69,14 +69,14 @@ const BlogPost = () => (
                         безпеки та інновій
                     </h3>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} data-testid="category-card">
                     <img src={img4} alt="" />
                     <h2>Обслуговування</h2>
                     <h3>
                         Корисні рекомендаціії з<br /> догляду за автомобілем
                     </h3>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} data-testid="category-card">
                     <img src={img5} alt="" />
                     <h2>
                         Модифікація <br />
@@ -89,7 +89,7 @@ const BlogPost = () => (
                         зовнішнього виду
                     </h3>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} data-testid="category-card">
                     <img src={img6} alt="" />
                     <h2>Поради з водіння</h2>
                     <h3>

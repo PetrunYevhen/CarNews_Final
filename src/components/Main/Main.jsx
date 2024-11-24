@@ -14,16 +14,15 @@ import ruslan from '../Pictures/MainPage/ruslan.jpg';
 import img9 from '../Pictures/MainPage/thumbnail_600x251.png';
 import styles from './Main.css';
 
-// function Header() {};
 const Main = () => (
-    <div className={styles.mainContainer}>
-        <div id={styles.textContainer}>
-            <h1>
+    <div className={styles.mainContainer} data-testid="main-container">
+        <div id={styles.textContainer} data-testid="text-container">
+            <h1 data-testid="main-heading">
                 Твоя подорож <br />
                 Твій автомобіль <br />
                 Твій шлях
             </h1>
-            <h2>
+            <h2 data-testid="subheading">
                 CarNews - це платформа для справжніх автомобільних <br />
                 ентузіастів, яка поєднує новини, блоги, огляди автомобілів. Тут <br />
                 користувачі можуть дізнаватися про останні тенденції <br />
@@ -31,47 +30,51 @@ const Main = () => (
                 CarNews - це ваш провідник у світі автомобілів, який пропонує <br />
                 свіжі новини та експертні огляди
             </h2>
-            <img src={img1} alt="" id={styles.img1} />
+            <img src={img1} alt="" id={styles.img1} data-testid="main-image" />
         </div>
 
-        <div id={styles.MiddleContainer}>
-            <div id={styles.log}>
-                <div id={styles.section1}>
-                    <h1>Останні новини</h1>
-                    <div id={styles.post}>
-                        <img src={img2} alt="" id={styles.img2} />
-                        <h5>Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
-                        <h2>
+        <div id={styles.MiddleContainer} data-testid="middle-container">
+            <div id={styles.log} data-testid="log-container">
+                <div id={styles.section1} data-testid="section1">
+                    <h1 data-testid="latest-news-heading">Останні новини</h1>
+                    <div id={styles.post} data-testid="post-container">
+                        <img src={img2} alt="" id={styles.img2} data-testid="news-image" />
+                        <h5 data-testid="news-date">Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
+                        <h2 data-testid="news-title">
                             Презентовано новий сімейний кросовер
                             <br />
                             Volkswagen Tayron
                         </h2>
-                        <p>
+                        <p data-testid="news-description">
                             У Німеччині презентували новий Volkswagen Tayron другого покоління. покажуть публіці на
                             автошоу в Парижі і він буде продаватися у Європі за ціною від 45 475 євро. Про нього
                             розповіли{' '}
-                            <Link to="https://www.volkswagen.ua" id={styles.link}>
+                            <Link to="https://www.volkswagen.ua" id={styles.link} data-testid="volkswagen-link">
                                 на офіційному сайті Volkswagen.
                             </Link>
                         </p>
-                        <Link to="/blogPost">
-                            <button id={styles.readMore}>Читати Більше</button>
+                        <Link to="/blogPost" data-testid="read-more-link">
+                            <button id={styles.readMore} data-testid="read-more-button">
+                                Читати Більше
+                            </button>
                         </Link>
                     </div>
                 </div>
-                <div id={styles.section2}>
-                    <h6 id={styles.all}>Все</h6>
-                    <h1>Популярні блоги</h1>
-                    <div className={styles.new}>
-                        <h5>Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
-                        <h2>
+                <div id={styles.section2} data-testid="section2">
+                    <h6 id={styles.all} data-testid="all-category">
+                        Все
+                    </h6>
+                    <h1 data-testid="popular-blogs-heading">Популярні блоги</h1>
+                    <div className={styles.new} data-testid="blog1">
+                        <h5 data-testid="blog1-date">Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
+                        <h2 data-testid="blog1-title">
                             MINI в США представила <br />
                             кабріолте Cooper
                         </h2>
                     </div>
-                    <div id={styles.new1}>
-                        <h5>Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
-                        <h2>
+                    <div id={styles.new1} data-testid="blog2">
+                        <h5 data-testid="blog2-date">Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
+                        <h2 data-testid="blog2-title">
                             Незвичний кабріолет Ferrari
                             <br />
                             Roma Spider представили
@@ -80,9 +83,9 @@ const Main = () => (
                         </h2>
                     </div>
 
-                    <div className={styles.new}>
-                        <h5>Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
-                        <h2>
+                    <div className={styles.new} data-testid="blog3">
+                        <h5 data-testid="blog3-date">Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
+                        <h2 data-testid="blog3-title">
                             Skoda презентувала абсолютно
                             <br />
                             новий електрчний кросовер
@@ -91,9 +94,9 @@ const Main = () => (
                         </h2>
                     </div>
 
-                    <div className={styles.new}>
-                        <h5>Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
-                        <h2>
+                    <div className={styles.new} data-testid="blog4">
+                        <h5 data-testid="blog4-date">Від &#34;InfoCar&#34; | Жовтень 11, 2024</h5>
+                        <h2 data-testid="blog4-title">
                             Porsche Taycan Turbo GT став
                             <br />
                             найшвдкішим серійним
@@ -104,13 +107,13 @@ const Main = () => (
                 </div>
             </div>
         </div>
-        <div id={styles.newContainer}>
-            <h1>Всі категорії</h1>
-            <div id={styles.section3}>
-                <div className={styles.card}>
-                    <img src={img3} alt="" />
-                    <h2>Огляди авто</h2>
-                    <h3>
+        <div id={styles.newContainer} data-testid="categories-container">
+            <h1 data-testid="categories-heading">Всі категорії</h1>
+            <div id={styles.section3} data-testid="categories-section">
+                <div className={styles.card} data-testid="car-reviews-card">
+                    <img src={img3} alt="" data-testid="car-reviews-image" />
+                    <h2 data-testid="car-reviews-title">Огляди авто</h2>
+                    <h3 data-testid="car-reviews-description">
                         Огляд тенічних
                         <br />
                         харектеристик, дизайну,
@@ -118,30 +121,30 @@ const Main = () => (
                         безпеки та інновій
                     </h3>
                 </div>
-                <div className={styles.card}>
-                    <img src={img4} alt="" />
-                    <h2>Обслуговування</h2>
-                    <h3>
+                <div className={styles.card} data-testid="maintenance-card">
+                    <img src={img4} alt="" data-testid="maintenance-image" />
+                    <h2 data-testid="maintenance-title">Обслуговування</h2>
+                    <h3 data-testid="maintenance-description">
                         Корисні рекомендаціії з<br /> догляду за автомобілем
                     </h3>
                 </div>
-                <div className={styles.card}>
-                    <img src={img5} alt="" />
-                    <h2>
+                <div className={styles.card} data-testid="modifications-card">
+                    <img src={img5} alt="" data-testid="modifications-image" />
+                    <h2 data-testid="modifications-title">
                         Модифікація <br />
                         автомобіля
                     </h2>
-                    <h3>
+                    <h3 data-testid="modifications-description">
                         Зміни та покращення
                         <br /> технічних характеристик,
                         <br />
                         зовнішнього виду
                     </h3>
                 </div>
-                <div className={styles.card}>
-                    <img src={img6} alt="" />
-                    <h2>Поради з водіння</h2>
-                    <h3>
+                <div className={styles.card} data-testid="driving-tips-card">
+                    <img src={img6} alt="" data-testid="driving-tips-image" />
+                    <h2 data-testid="driving-tips-title">Поради з водіння</h2>
+                    <h3 data-testid="driving-tips-description">
                         Практичні рекомендації, які
                         <br /> допоможуть покращити
                         <br /> навички керування авто
@@ -149,17 +152,17 @@ const Main = () => (
                 </div>
             </div>
         </div>
-        <div id={styles.feedback}>
-            <div id={styles.section4}>
-                <h2>ВІДГУКИ ПРО САЙТ</h2>
-                <h1>
+        <div id={styles.feedback} data-testid="feedback-section">
+            <div id={styles.section4} data-testid="feedback-section1">
+                <h2 data-testid="feedback-heading">ВІДГУКИ ПРО САЙТ</h2>
+                <h1 data-testid="feedback-subheading">
                     Що люди
                     <br />
-                    говорять про шаш
+                    говорять про цей
                     <br />
                     сайт
                 </h1>
-                <h2>
+                <h2 data-testid="feedback-comment">
                     &#34;Цей сайт став для мене відкритям!
                     <br />
                     Дуже зручний інтерфейс і корисна
@@ -167,32 +170,36 @@ const Main = () => (
                     інформація. Рекомендую всім!&#34;
                 </h2>
             </div>
-            <div id={styles.section5}>
-                <h1>
+            <div id={styles.section5} data-testid="feedback-section2">
+                <h1 data-testid="feedback-comment2">
                     &#34;Завжди знаходжу потрібну <br /> інформацію на цьому сайті. Дуже <br /> зручний і інтуїтивно
                     зрозумілий! <br /> Великий плюс - швидка <br /> навігація.&#34;
                 </h1>
-                <div id={styles.comment}>
-                    <img src={ruslan} alt="" id={styles.avatar} />
-                    <h5>Подзивало Руслан</h5>
+                <div id={styles.comment} data-testid="feedback-author">
+                    <img src={ruslan} alt="" id={styles.avatar} data-testid="feedback-avatar" />
+                    <h5 data-testid="feedback-author-name">Подзивало Руслан</h5>
                 </div>
-                <h4>
+                <h4 data-testid="feedback-location">
                     Україна
                     <br />
                     Ужгород
                 </h4>
             </div>
-            <div id={styles.buttons}>
-                <button id={styles.button1}>&#8592;</button>
-                <button id={styles.button2}>&#8594;</button>
+            <div id={styles.buttons} data-testid="feedback-buttons">
+                <button id={styles.button1} data-testid="feedback-button1">
+                    &#8592;
+                </button>
+                <button id={styles.button2} data-testid="feedback-button2">
+                    &#8594;
+                </button>
             </div>
         </div>
-        <div id={styles.lastContainer}>
-            <h1>Нові технології</h1>
-            <div id={styles.section6}>
-                <div className={styles.cardNew}>
-                    <img src={img10} alt="" />
-                    <h2>
+        <div id={styles.lastContainer} data-testid="last-container">
+            <h1 data-testid="new-tech-heading">Нові технології</h1>
+            <div id={styles.section6} data-testid="new-tech-section">
+                <div className={styles.cardNew} data-testid="new-tech-card1">
+                    <img src={img10} alt="" data-testid="new-tech-image1" />
+                    <h2 data-testid="new-tech-title1">
                         Огляд автомобілів із <br />
                         передовими
                         <br />
@@ -203,23 +210,23 @@ const Main = () => (
                         системами
                     </h2>
                 </div>
-                <div className={styles.cardNew}>
-                    <img src={img9} alt="" />
-                    <h2>
+                <div className={styles.cardNew} data-testid="new-tech-card2">
+                    <img src={img9} alt="" data-testid="new-tech-image2" />
+                    <h2 data-testid="new-tech-title2">
                         Глибоке занурення в <br />
                         спортивні автомобілі{' '}
                     </h2>
                 </div>
-                <div className={styles.cardNew}>
-                    <img src={img8} alt="" />
-                    <h2>
+                <div className={styles.cardNew} data-testid="new-tech-card3">
+                    <img src={img8} alt="" data-testid="new-tech-image3" />
+                    <h2 data-testid="new-tech-title3">
                         Огляд автомобілів із <br /> найкращою вартістю <br />
                         перепродажу
                     </h2>
                 </div>
-                <div className={styles.cardNew}>
-                    <img src={img7} alt="" />
-                    <h2>
+                <div className={styles.cardNew} data-testid="new-tech-card4">
+                    <img src={img7} alt="" data-testid="new-tech-image4" />
+                    <h2 data-testid="new-tech-title4">
                         Огляд автомобілів із <br /> найкращою вартістю <br />
                         перепродажу
                     </h2>
