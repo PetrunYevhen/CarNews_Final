@@ -8,7 +8,7 @@
 #textContainer {
     background-color: #31323c;
     padding: 110px;
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -19,7 +19,7 @@
 
 #textContainer h2 {
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #img1{
@@ -73,7 +73,7 @@ font-size: 70px;
 
 #postContainer{
     border-bottom: 1px solid grey;
-    padding-bottom: 300px;
+    padding-bottom: 30px;
 }
 #postInfo button{
     background-color: #ff5959;

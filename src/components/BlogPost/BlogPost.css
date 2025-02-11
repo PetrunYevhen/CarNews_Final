@@ -1,10 +1,10 @@
 #img1 {
-    width: 1500px;
+    width: 1140px;
     height: auto;
     margin-bottom: 40px;
 }
 #blogPostContainer {
-    padding: 30px 200px 50px 200px;
+    padding: 30px 120px 50px 200px;
 }
 #blogPostContainer h1 {
     font-size: 70px;
@@ -53,7 +53,7 @@
 }
 #section3 {
     display: flex;
-    gap: 50px;
+    gap: 75px;
 }
 .card h3 {
     font-weight: normal;

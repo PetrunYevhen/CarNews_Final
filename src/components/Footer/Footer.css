@@ -5,7 +5,7 @@
     color: #cfcfcf;
     display: flex;
     flex-direction: column;
-    padding: 20px 100px 20px 100px;
+    padding: 50px 100px 20px 100px;
 }
 .container h1{
     font-size: 60px;

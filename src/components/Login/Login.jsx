@@ -67,7 +67,7 @@ const Login = () => {
                 )}
                 <Link to={`/register`} id={styles.links} data-testid="register-link">
                     <button type="button" id={styles.create} data-testid="create-account-button">
-                        Маєте профіль?
+                        Створити профіль
                     </button>
                 </Link>
             </form>

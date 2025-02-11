@@ -161,7 +161,7 @@
 }
 #section3 {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 .card h3 {
     font-weight: normal;
@@ -191,7 +191,7 @@
 }
 
 #section5 {
-    padding: 50px;
+    padding: 30px;
 }
 #comment {
     display: flex;
@@ -230,8 +230,8 @@
     background-color: white;
 }
 #button2 {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     font-size: 50px;
     text-align: center;
@@ -247,7 +247,7 @@
 #section6 {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 30px;
 }
 .cardNew {
     padding: 20px;
@@ -266,7 +266,7 @@
     display: flex;
 }
 #readMore:hover {
-    font-size: 200px;
+    font-size: 20px;
     cursor: pointer;
     background-color: #770000;
 }

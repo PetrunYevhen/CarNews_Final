@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import img1 from '../Pictures/BlogPost/2025-Volkswagen-Tayon-China-new-3.png';
-import img6 from '../Pictures/MainPage/1.jpg';
 import img4 from '../Pictures/MainPage/2.png';
 import img3 from '../Pictures/MainPage/3.jpg';
 import img5 from '../Pictures/MainPage/4.png';
@@ -87,15 +86,6 @@ const BlogPost = () => (
                         <br /> технічних характеристик,
                         <br />
                         зовнішнього виду
-                    </h3>
-                </div>
-                <div className={styles.card} data-testid="category-card">
-                    <img src={img6} alt="" />
-                    <h2>Поради з водіння</h2>
-                    <h3>
-                        Практичні рекомендації, які
-                        <br /> допоможуть покращити
-                        <br /> навички керування авто
                     </h3>
                 </div>
             </div>

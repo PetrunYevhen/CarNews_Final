@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 
 import Blog from './components/Blog/Blog';
 import BlogPost from './components/BlogPost/BlogPost';
